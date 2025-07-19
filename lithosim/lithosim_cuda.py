@@ -7,7 +7,7 @@ from PIL import Image
 import torch
 import torch.fft
 import torchvision
-from torchvision.transforms import Compose, ToTensor, Scale, Grayscale
+from torchvision.transforms import Compose, ToTensor, Resize, Grayscale
 
 
 def is_bin(filename):
