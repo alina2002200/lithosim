@@ -1,5 +1,5 @@
 import os, csv
-from torchvision.transforms import Compose, CenterCrop, ToTensor, Scale, Grayscale
+from torchvision.transforms import Compose, CenterCrop, ToTensor, Resize, Grayscale
 import torch.utils.data as data
 from fnmatch import fnmatch
 from PIL import Image
