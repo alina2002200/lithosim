@@ -18,6 +18,7 @@ This code requires CUDA, so you can open it in GoogleCollab
 **Step 3:** Conduct Neural-ILT on [ICCAD 2013 mask optimization contest benchmarks](https://ieeexplore.ieee.org/document/6691131)
 Add mask as lithosim/output/refine_net_output/t1_0_mask.png
 ~~~bash
+%cd ..
 %cd lithosim
 !python run_litho_sim_batch.py
 ~~~
