@@ -23,12 +23,12 @@ plt.figure(figsize=(15, 5))
 
 plt.subplot(1, 3, 1)
 plt.imshow(img1, cmap='gray', vmin=0, vmax=255)
-plt.title('Исходная маска')
+plt.title('Маска Lithosim')
 plt.axis('off')
 
 plt.subplot(1, 3, 2)
 plt.imshow(img2, cmap='gray', vmin=0, vmax=255)
-plt.title('Симулированная маска')
+plt.title('Маска с Цернике')
 plt.axis('off')
 
 plt.subplot(1, 3, 3)
