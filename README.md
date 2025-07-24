@@ -30,3 +30,10 @@ Now to implement lithosim use this commands
 %cd lithosim
 !python run_litho_sim_batch.py
 ~~~
+**Step 4**
+To see difference between test image and lithosim
+~~~bash
+%cd ..
+%cd additional
+!python dots_vs_lithosim_dots.py
+~~~
