@@ -19,3 +19,6 @@ $ cd lithosim/
 $ python run_litho_sim_batch.py
 ~~~
 See mask in lithosim/output/refine_litho_out/t1_0_mask.png
+
+**Step 3.5**
+You can generate mask using 
