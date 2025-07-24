@@ -73,6 +73,10 @@ def generate_zernike_phase(shape, coeffs, device='cpu'):
         (3, 1),  # coma x
         (3, 3),  # trefoil x
         (4, 0),  # spherical aberration
+        (4, -2),
+        (4, 2),
+        (4, 4),
+        (4, -4),
     ]
 
     for i, a in enumerate(coeffs):
@@ -278,7 +282,7 @@ def lithosim(image_data, threshold, kernels, weight, wafer_output_path, save_bin
     complex_image_data = fft2(complex_image_data) # N * 1 * H * W (complex)
     
     # ======= фазовая маска через Цернике ========
-    zernike_coeffs = [0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0]
+    zernike_coeffs = [0.0, 1.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
     if zernike_coeffs is not None:
         K, H, W = kernels.shape
