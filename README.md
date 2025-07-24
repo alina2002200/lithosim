@@ -2,7 +2,7 @@
 
 ## Usage
 
-This code requires CUDA, so you can open it in GoogleCollab
+This code requires CUDA, so you can open it in GoogleCollab, using ipynb file from main directory or:
 
 **Step 1:** Download the source codes. For example,
 ~~~bash
@@ -30,10 +30,25 @@ Now to implement lithosim use this commands
 %cd lithosim
 !python run_litho_sim_batch.py
 ~~~
-**Step 4**
+**Step 5**
 To see difference between test image and lithosim
 ~~~bash
 %cd ..
 %cd additional
 !python dots_vs_lithosim_dots.py
+~~~
+**Step 6**
+Now to implement lithosim with zernike use this commands
+~~~bash
+%cd ..
+%cd lithosim
+!python run_litho_sim_batch_zernike.py
+~~~
+
+**Step 7**
+To see difference between lithosim and lithosim + zernike
+~~~bash
+%cd ..
+%cd additional
+!python lithosim_dots_vs_zernike_dots.py
 ~~~
