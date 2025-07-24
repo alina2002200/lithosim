@@ -12,4 +12,4 @@ for y in range(margin, size, step):
     for x in range(margin, size, step):
         draw.ellipse([x-radius, y-radius, x+radius, y+radius], fill=255)
 
-image.save("lithosim_input.png", compress_level=0)
+image.save("/content/lithosim/output/refine_net_output/t1_0_mask.png", compress_level=0)
