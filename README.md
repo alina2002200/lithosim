@@ -17,7 +17,6 @@ This code requires CUDA, so you can open it in GoogleCollab
 
 **Step 3:** Conduct Neural-ILT on [ICCAD 2013 mask optimization contest benchmarks](https://ieeexplore.ieee.org/document/6691131)
 ~~~bash
-%cd ..
 %cd additional
 !python image_generator_dots.py
 ~~~
